@@ -7,6 +7,7 @@
 	"scripts": {
 		"dev": "node scripts/dev.js",
 		"build": "next build",
+		"prepare:bolt": "node scripts/prepareBolt.js",
 		"preview": "node scripts/preview.js",
 		"preview:page": "node scripts/previewPage.js",
 		"preview:slice": "node scripts/previewSlice.js",

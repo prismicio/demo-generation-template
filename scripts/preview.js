@@ -1,8 +1,8 @@
 #!/usr/bin/env node
 
 import { execFileSync } from "node:child_process"
-import { createServer } from "node:http"
 import fs from "node:fs"
+import { createServer } from "node:http"
 import path from "node:path"
 
 import { applyBrand, parseBrandArg } from "./applyBrand.js"
@@ -16,8 +16,13 @@ const { repositoryName } = JSON.parse(
 
 const skipBuild = process.argv.includes("--skip-build")
 const brandName = parseBrandArg(process.argv)
+const boltPrepared = fs.existsSync(path.join(root, ".prismic-bolt.json"))
 
-applyBrand({ root, brandName })
+if (boltPrepared) {
+	console.log("[preview] Using globals.css prepared by yarn prepare:bolt.")
+} else {
+	applyBrand({ root, brandName })
+}
 
 if (!skipBuild) {
 	console.log("[preview] Building static export...")
@@ -101,9 +106,10 @@ function resolveStaticFilePath(args) {
 		relativePath.startsWith(pattern),
 	)
 
-	const targetPath = isStaticFile ?
-		path.join(outDir, relativePath)
-	:	resolvePageHtmlPath(relativePath, outDir)
+	const targetPath =
+		isStaticFile ?
+			path.join(outDir, relativePath)
+		:	resolvePageHtmlPath(relativePath, outDir)
 
 	if (!targetPath.startsWith(outDir)) {
 		return null
@@ -113,9 +119,8 @@ function resolveStaticFilePath(args) {
 }
 
 function resolvePageHtmlPath(relativePath, outDir) {
-	const pagePath = relativePath.endsWith("/") ?
-		relativePath.slice(0, -1)
-	:	relativePath
+	const pagePath =
+		relativePath.endsWith("/") ? relativePath.slice(0, -1) : relativePath
 
 	if (pagePath === "" || pagePath === "/") {
 		return path.join(outDir, "index.html")

@@ -58,6 +58,18 @@ Preview scripts open the browser themselves (Next.js has no `--open` CLI flag). 
 | `yarn preview` | Builds and serves the static `out/` export (content loads from live Prismic API at runtime) |
 | `yarn preview --skip-build` | Serve existing `out/` without rebuilding |
 
+Bolt handoff can prepare the template after GitHub import:
+
+```sh
+yarn prepare:bolt --repository <repository> \
+  --brand-base64 <base64-brand-json>
+```
+
+This writes `prismic.config.json`, decodes the brand JSON into the local brand
+mock folder, runs `applyBrand.js`, and creates `.prismic-bolt.json`. When that
+marker exists, `yarn preview` keeps the prepared `globals.css` instead of
+applying a local mock brand.
+
 Port configuration: `PORT` (Next.js native) or `NEXT_PREVIEW_PORT` (project alias), default `3000`.
 
 Other routes:
