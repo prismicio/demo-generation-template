@@ -1,0 +1,6 @@
+{
+	"repositoryName": "mock",
+	"adapter": "@prismicio/adapter-next",
+	"libraries": ["./src/slices"],
+	"documentAPIEndpoint": "https://mock.cdn.prismic.io/api/v2"
+}

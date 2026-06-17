@@ -1,0 +1,63 @@
+{
+	"id": "feature_grid",
+	"type": "SharedSlice",
+	"name": "FeatureGrid",
+	"description": "Section heading with a grid of feature tiles.",
+	"variations": [
+		{
+			"id": "default",
+			"name": "Default",
+			"docURL": "...",
+			"version": "sktwi1xtmkfgx8626",
+			"description": "Default",
+			"primary": {
+				"kicker": {
+					"type": "Text",
+					"config": {
+						"label": "Kicker",
+						"placeholder": "Why us"
+					}
+				},
+				"title": {
+					"type": "Text",
+					"config": {
+						"label": "Title",
+						"placeholder": ""
+					}
+				},
+				"intro": {
+					"type": "Text",
+					"config": {
+						"label": "Intro",
+						"placeholder": ""
+					}
+				}
+			},
+			"items": {
+				"feature_image": {
+					"type": "Image",
+					"config": {
+						"label": "Feature image",
+						"constraint": {},
+						"thumbnails": []
+					}
+				},
+				"feature_title": {
+					"type": "Text",
+					"config": {
+						"label": "Feature title",
+						"placeholder": ""
+					}
+				},
+				"feature_body": {
+					"type": "Text",
+					"config": {
+						"label": "Feature body",
+						"placeholder": ""
+					}
+				}
+			},
+			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+		}
+	]
+}

@@ -1,0 +1,175 @@
+{
+	"status": "ok",
+	"brand": {
+		"domain": "prismic.io",
+		"title": "Prismic",
+		"description": "Prismic is a headless CMS platform that enables teams to build, manage, and scale websites and landing pages efficiently. As a flexible page builder, it separates content creation from presentation, allowing developers to deliver content via APIs to any front‑end framework or device. Marketers can edit and publish content through an intuitive interface, while developers benefit from customizable content models, versioning, and integration capabilities. Prismic’s focus on performance, scalability, and a seamless editing experience helps organizations accelerate digital projects and maintain consistent brand experiences across channels.",
+		"slogan": "Prismic: Build faster with headless CMS and AI-enhanced page builder.",
+		"colors": [
+			{
+				"hex": "#040404",
+				"name": "Armor Wash"
+			},
+			{
+				"hex": "#c6ebf9",
+				"name": "Icy Landscape"
+			},
+			{
+				"hex": "#64747c",
+				"name": "Wharf View"
+			}
+		],
+		"logos": [
+			{
+				"url": "https://media.brand.dev/15b7b6e3-b05b-4d65-93d9-08e268d0d124.jpg",
+				"mode": "has_opaque_background",
+				"colors": [
+					{
+						"hex": "#c6ebf9",
+						"name": "Icy Landscape"
+					},
+					{
+						"hex": "#64747c",
+						"name": "Wharf View"
+					},
+					{
+						"hex": "#1a2326",
+						"name": "Shadow Warrior"
+					}
+				],
+				"resolution": {
+					"width": 200,
+					"height": 200,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/974b1393-5dfa-4a1b-aa5d-7f7daf3952e0.svg",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#040404",
+						"name": "Armor Wash"
+					}
+				],
+				"resolution": {
+					"width": 256,
+					"height": 256,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/66e15a26-ca9f-44cc-9909-e13003a7414e.png",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#040404",
+						"name": "Armor Wash"
+					}
+				],
+				"resolution": {
+					"width": 180,
+					"height": 180,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/d8cda67f-4d1e-4a06-987d-a452e9f7b900.svg",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#040404",
+						"name": "Armor Wash"
+					}
+				],
+				"resolution": {
+					"width": 109,
+					"height": 28,
+					"aspect_ratio": 3.89
+				},
+				"type": "logo"
+			}
+		],
+		"backdrops": [
+			{
+				"url": "https://media.brand.dev/85491a6c-262a-423f-ba79-67b8227d4c5c.png",
+				"colors": [
+					{
+						"hex": "#8a498a",
+						"name": "Prunella"
+					},
+					{
+						"hex": "#346560",
+						"name": "Seiheki Green"
+					},
+					{
+						"hex": "#c8c8c8",
+						"name": "Brushed Metal"
+					}
+				],
+				"resolution": {
+					"width": 1000,
+					"height": 525,
+					"aspect_ratio": 1.9
+				}
+			}
+		],
+		"address": {
+			"street": "9 Rue de la Pierre Levée",
+			"city": "Paris",
+			"country": "France",
+			"country_code": "FR",
+			"state_province": "Île-de-France",
+			"state_code": "CA",
+			"postal_code": "75011"
+		},
+		"socials": [
+			{
+				"type": "youtube",
+				"url": "https://youtube.com/@prismic"
+			},
+			{
+				"type": "x",
+				"url": "https://x.com/prismicio"
+			},
+			{
+				"type": "linkedin",
+				"url": "https://linkedin.com/company/prismic-io"
+			},
+			{
+				"type": "facebook",
+				"url": "https://facebook.com/prismic.io"
+			}
+		],
+		"email": "marketing@prismic.io",
+		"phone": "6789382985",
+		"is_nsfw": false,
+		"industries": {
+			"eic": [
+				{
+					"industry": "Technology",
+					"subindustry": "Software (B2B)"
+				},
+				{
+					"industry": "Technology",
+					"subindustry": "Developer Tools & APIs"
+				}
+			]
+		},
+		"links": {
+			"terms": null,
+			"contact": null,
+			"privacy": null,
+			"careers": "https://prismic.io/jobs",
+			"blog": "https://prismic.io/solutions/blog",
+			"login": null,
+			"signup": null,
+			"pricing": "https://prismic.io/pricing"
+		},
+		"primary_language": "english"
+	},
+	"code": 200
+}

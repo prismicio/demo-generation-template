@@ -1,0 +1,195 @@
+{
+	"status": "ok",
+	"brand": {
+		"domain": "netflix.com",
+		"title": "Netflix",
+		"description": "Netflix is a premier online streaming platform that provides a vast library of TV shows, movies, and games to its users. With over 270 million paid memberships across more than 190 countries, it stands as one of the largest entertainment services globally. Netflix allows members to enjoy content across diverse genres and languages, offering the flexibility to play, pause, and resume viewing at their convenience from various devices, including smart TVs, game consoles, PCs, Macs, and mobile devices. Users can also adjust their subscription plans at any time, making it a versatile choice for entertainment consumption.",
+		"slogan": "Watch anytime, anywhere with Netflix's wide variety of entertainment.",
+		"colors": [
+			{
+				"hex": "#e40404",
+				"name": "Little Red Corvette"
+			},
+			{
+				"hex": "#b40404",
+				"name": "Artful Red"
+			},
+			{
+				"hex": "#86040c",
+				"name": "Red Devil"
+			}
+		],
+		"logos": [
+			{
+				"url": "https://media.brand.dev/d11d0460-0f48-45bc-83e6-f4b12731d818.png",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#e40404",
+						"name": "Little Red Corvette"
+					}
+				],
+				"resolution": {
+					"width": 250,
+					"height": 250,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/d323a054-cea8-466d-b8fc-448bb13a0c9b.png",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#c4070f",
+						"name": "Furious Tomato"
+					},
+					{
+						"hex": "#65040a",
+						"name": "Rosewood"
+					}
+				],
+				"resolution": {
+					"width": 720,
+					"height": 720,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/ca48bc9c-bed8-4c22-9fbd-9dd06cd55278.png",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#e40b14",
+						"name": "Tomato Baby"
+					},
+					{
+						"hex": "#86040c",
+						"name": "Red Devil"
+					}
+				],
+				"resolution": {
+					"width": 128,
+					"height": 128,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/c31c0981-d069-43a8-b372-dab119839b74.svg",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#e30b14",
+						"name": "Tomato Baby"
+					}
+				],
+				"resolution": {
+					"width": 552,
+					"height": 1000,
+					"aspect_ratio": 0.55
+				},
+				"type": "logo"
+			}
+		],
+		"backdrops": [
+			{
+				"url": "https://media.brand.dev/9a9347db-e7d8-4cd4-8d10-0cf5bd1d3b50.jpg",
+				"colors": [
+					{
+						"hex": "#c79686",
+						"name": "Café Crème"
+					},
+					{
+						"hex": "#7a89a3",
+						"name": "Faded Denim"
+					},
+					{
+						"hex": "#161012",
+						"name": "Sticky Black Tarmac"
+					}
+				],
+				"resolution": {
+					"width": 1500,
+					"height": 500,
+					"aspect_ratio": 3
+				}
+			},
+			{
+				"url": "https://media.brand.dev/bfde0fdb-a0af-4a07-b009-e3e03d9317ed.jpg",
+				"colors": [
+					{
+						"hex": "#968161",
+						"name": "Charlie Horse"
+					},
+					{
+						"hex": "#252f24",
+						"name": "Quartzite"
+					},
+					{
+						"hex": "#bdb8be",
+						"name": "Standing Ovation"
+					}
+				],
+				"resolution": {
+					"width": 1046,
+					"height": 697,
+					"aspect_ratio": 1.5
+				}
+			}
+		],
+		"address": {
+			"street": "100 Winchester Circle",
+			"city": "Los Gatos",
+			"country": "UNITED STATES",
+			"country_code": "US",
+			"state_province": "California",
+			"state_code": "CA",
+			"postal_code": "95032"
+		},
+		"socials": [
+			{
+				"type": "x",
+				"url": "https://x.com/netflix"
+			},
+			{
+				"type": "facebook",
+				"url": "https://facebook.com/netflix"
+			},
+			{
+				"type": "linkedin",
+				"url": "https://linkedin.com/company/netflix"
+			}
+		],
+		"stock": {
+			"ticker": "NFLX",
+			"exchange": "NASDAQ"
+		},
+		"email": "web@netflix.com",
+		"phone": "6666666666",
+		"is_nsfw": false,
+		"industries": {
+			"eic": [
+				{
+					"industry": "Entertainment",
+					"subindustry": "Streaming Platforms (Video, Music, Audio)"
+				},
+				{
+					"industry": "Entertainment",
+					"subindustry": "Gaming & Interactive Entertainment"
+				}
+			]
+		},
+		"links": {
+			"careers": "https://jobs.netflix.com/jobs",
+			"terms": "https://help.netflix.com/legal/termsofuse",
+			"contact": "https://help.netflix.com/contactus",
+			"privacy": "https://help.netflix.com/legal/privacy",
+			"blog": null,
+			"pricing": null
+		},
+		"primary_language": "english"
+	},
+	"code": 200
+}

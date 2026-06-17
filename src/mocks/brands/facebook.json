@@ -1,0 +1,204 @@
+{
+	"status": "ok",
+	"brand": {
+		"domain": "meta.com",
+		"title": "Meta",
+		"description": "Facebook is a social media platform that enables users to connect with others, share experiences, and build communities. The platform allows users to log in and start sharing and connecting with friends, family, and people they know, fostering online interactions and relationships.",
+		"slogan": "Connect with what you love to make things happen",
+		"colors": [
+			{
+				"hex": "#2384f1",
+				"name": "Pool Water"
+			},
+			{
+				"hex": "#92c6fa",
+				"name": "Clear Sky"
+			},
+			{
+				"hex": "#0c64fc",
+				"name": "Heroic Blue"
+			}
+		],
+		"logos": [
+			{
+				"url": "https://media.brand.dev/0a3aa059-5551-4907-9bd4-fe323646b7b3.png",
+				"mode": "has_opaque_background",
+				"colors": [
+					{
+						"hex": "#2384f1",
+						"name": "Pool Water"
+					},
+					{
+						"hex": "#92c6fa",
+						"name": "Clear Sky"
+					}
+				],
+				"resolution": {
+					"width": 144,
+					"height": 144,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/256e677f-c41d-4546-ba9e-424e0c555720.svg",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#0c64fc",
+						"name": "Heroic Blue"
+					}
+				],
+				"resolution": {
+					"width": 1090,
+					"height": 360,
+					"aspect_ratio": 3.03
+				},
+				"type": "logo"
+			},
+			{
+				"url": "https://media.brand.dev/97097c47-497f-4307-8dcd-a69e8e59905a.png",
+				"mode": "has_opaque_background",
+				"colors": [
+					{
+						"hex": "#0c79ef",
+						"name": "Deep Sky Blue"
+					},
+					{
+						"hex": "#7abcf8",
+						"name": "Broken Blue"
+					}
+				],
+				"resolution": {
+					"width": 900,
+					"height": 900,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			}
+		],
+		"backdrops": [
+			{
+				"url": "https://media.brand.dev/fb64d93c-d738-4494-9518-3458f64d3f26.png",
+				"colors": [
+					{
+						"hex": "#d7e2ee",
+						"name": "Blooming Aster"
+					},
+					{
+						"hex": "#8f4f56",
+						"name": "Rialto"
+					},
+					{
+						"hex": "#3b4550",
+						"name": "Boeing Blue"
+					}
+				],
+				"resolution": {
+					"width": 1500,
+					"height": 500,
+					"aspect_ratio": 3
+				}
+			},
+			{
+				"url": "https://media.brand.dev/08cdf644-ecfd-4352-9f01-69356f4ce488.png",
+				"colors": [
+					{
+						"hex": "#d9e7f5",
+						"name": "Azureish White"
+					},
+					{
+						"hex": "#8d4f4a",
+						"name": "Moroccan Ruby"
+					},
+					{
+						"hex": "#2a3843",
+						"name": "Precision"
+					}
+				],
+				"resolution": {
+					"width": 1707,
+					"height": 282,
+					"aspect_ratio": 6.05
+				}
+			},
+			{
+				"url": "https://media.brand.dev/d2cec93e-106c-476f-9138-a1100033f33d.jpg",
+				"colors": [
+					{
+						"hex": "#d8e5f2",
+						"name": "Space Wolves Grey"
+					},
+					{
+						"hex": "#6c6a7b",
+						"name": "Space Station"
+					},
+					{
+						"hex": "#393a3f",
+						"name": "After Midnight"
+					}
+				],
+				"resolution": {
+					"width": 1200,
+					"height": 626,
+					"aspect_ratio": 1.92
+				}
+			}
+		],
+		"address": {
+			"street": "1 Hacker Way",
+			"city": "Menlo Park",
+			"country": "United States",
+			"country_code": "US",
+			"state_province": "California",
+			"state_code": "CA",
+			"postal_code": "94025"
+		},
+		"socials": [
+			{
+				"type": "x",
+				"url": "https://x.com/meta"
+			},
+			{
+				"type": "instagram",
+				"url": "https://instagram.com/meta"
+			},
+			{
+				"type": "facebook",
+				"url": "https://facebook.com/terms"
+			}
+		],
+		"stock": {
+			"ticker": "META",
+			"exchange": "NASDAQ"
+		},
+		"phone": "1754569450",
+		"is_nsfw": false,
+		"industries": {
+			"eic": [
+				{
+					"industry": "Technology",
+					"subindustry": "Software (B2C)"
+				},
+				{
+					"industry": "Entertainment",
+					"subindustry": "Creator Economy & Influencer Platforms"
+				},
+				{
+					"industry": "News & Media",
+					"subindustry": "Digital Media & Content Platforms"
+				}
+			]
+		},
+		"links": {
+			"blog": null,
+			"careers": null,
+			"privacy": null,
+			"terms": null,
+			"contact": null,
+			"pricing": null
+		},
+		"primary_language": "english"
+	},
+	"code": 200
+}

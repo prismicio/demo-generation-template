@@ -1,0 +1,164 @@
+{
+	"status": "ok",
+	"brand": {
+		"domain": "snapchat.com",
+		"title": "Snapchat",
+		"description": "Snap Inc. is a technology company that created Snapchat, a social networking app known for its free image messaging and augmented reality features. They offer a platform for businesses to reach a unique audience, grow their reach, and drive meaningful results. Snap Inc. provides resources such as news updates, advertising tips, and tutorials on topics like Snapchat Ads, campaign optimization, ad performance assessment, and augmented reality innovations. Their mission is to leverage the power of the camera to enhance how people communicate, express themselves, explore the world, and have fun together. Whether you are a beginner in using Snapchat for business or interested in advanced advertising tools, Snap Inc. is here to support you on your journey to success.",
+		"slogan": "Less likes. More Love. Empower expression with Snapchat.",
+		"colors": [
+			{
+				"hex": "#fafa09",
+				"name": "Banana King"
+			},
+			{
+				"hex": "#7c741c",
+				"name": "Crocodile Eye"
+			},
+			{
+				"hex": "#171610",
+				"name": "Darkness"
+			}
+		],
+		"logos": [
+			{
+				"url": "https://media.brand.dev/699c65f9-8084-4bee-8108-26f1d0df6cbd.jpg",
+				"mode": "dark",
+				"colors": [
+					{
+						"hex": "#fafa09",
+						"name": "Banana King"
+					},
+					{
+						"hex": "#7c741c",
+						"name": "Crocodile Eye"
+					},
+					{
+						"hex": "#171610",
+						"name": "Darkness"
+					}
+				],
+				"resolution": {
+					"width": 200,
+					"height": 200,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/b7cb53eb-0279-4cf5-965e-3147e0a5e385.png",
+				"mode": "dark",
+				"colors": [
+					{
+						"hex": "#faf204",
+						"name": "Asfar Yellow"
+					},
+					{
+						"hex": "#82720b",
+						"name": "Tool Green"
+					}
+				],
+				"resolution": {
+					"width": 200,
+					"height": 200,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			}
+		],
+		"backdrops": [
+			{
+				"url": "https://media.brand.dev/b7a6ae6d-ad6d-4878-8f2f-369fa501553d.jpg",
+				"colors": [
+					{
+						"hex": "#9c434d",
+						"name": "Charleston Cherry"
+					},
+					{
+						"hex": "#dfb0a6",
+						"name": "Pale Blush"
+					},
+					{
+						"hex": "#2a343c",
+						"name": "Dracula Orchid"
+					}
+				],
+				"resolution": {
+					"width": 1188,
+					"height": 396,
+					"aspect_ratio": 3
+				}
+			},
+			{
+				"url": "https://media.brand.dev/54545df3-920c-45d7-b143-c1a491e1284c.jpg",
+				"colors": [
+					{
+						"hex": "#222d47",
+						"name": "Manganese Black"
+					},
+					{
+						"hex": "#a5a38b",
+						"name": "Apple Hill"
+					},
+					{
+						"hex": "#57433f",
+						"name": "Dark Walnut"
+					}
+				],
+				"resolution": {
+					"width": 1128,
+					"height": 191,
+					"aspect_ratio": 5.91
+				}
+			}
+		],
+		"address": {
+			"city": "Santa Monica",
+			"country": "UNITED STATES",
+			"country_code": "US",
+			"state_province": "California",
+			"state_code": "CA",
+			"postal_code": "90405"
+		},
+		"socials": [
+			{
+				"type": "x",
+				"url": "https://x.com/snapchat"
+			},
+			{
+				"type": "linkedin",
+				"url": "https://linkedin.com/showcase/snapchat-for-business"
+			}
+		],
+		"is_nsfw": false,
+		"industries": {
+			"eic": [
+				{
+					"industry": "Technology",
+					"subindustry": "Software (B2C)"
+				},
+				{
+					"industry": "Technology",
+					"subindustry": "XR & Spatial Computing"
+				},
+				{
+					"industry": "Entertainment",
+					"subindustry": "Creator Economy & Influencer Platforms"
+				},
+				{
+					"industry": "Entertainment",
+					"subindustry": "Advertising, Adtech & Media Buying"
+				}
+			]
+		},
+		"links": {
+			"careers": null,
+			"terms": null,
+			"contact": null,
+			"privacy": "https://help.snapchat.com/hc/articles/11399265637012",
+			"blog": null,
+			"pricing": null
+		},
+		"primary_language": "english"
+	},
+	"code": 200
+}

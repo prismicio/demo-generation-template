@@ -1,0 +1,8 @@
+node_modules/
+.next/
+out/
+dist/
+.env*
+*.tar.gz
+.claude
+brand.json

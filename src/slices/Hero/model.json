@@ -1,0 +1,62 @@
+{
+	"id": "hero",
+	"type": "SharedSlice",
+	"name": "Hero",
+	"description": "Headline, supporting copy, and primary or secondary calls to action.",
+	"variations": [
+		{
+			"id": "default",
+			"name": "Default",
+			"docURL": "...",
+			"version": "sktwi1xtmkfgx8626",
+			"description": "Default",
+			"primary": {
+				"eyebrow": {
+					"type": "Text",
+					"config": {
+						"label": "Eyebrow",
+						"placeholder": "Short label above the headline"
+					}
+				},
+				"headline": {
+					"type": "Text",
+					"config": {
+						"label": "Headline",
+						"placeholder": ""
+					}
+				},
+				"description": {
+					"type": "Text",
+					"config": {
+						"label": "Description",
+						"placeholder": ""
+					}
+				},
+				"cta_label": {
+					"type": "Text",
+					"config": {
+						"label": "Primary CTA label",
+						"placeholder": ""
+					}
+				},
+				"secondary_cta_label": {
+					"type": "Text",
+					"config": {
+						"label": "Secondary CTA label",
+						"placeholder": ""
+					}
+				},
+				"image": {
+					"type": "Image",
+					"config": {
+						"label": "Image",
+						"constraint": {},
+						"thumbnails": []
+					}
+				}
+			},
+			"items": {},
+			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+		}
+	]
+}

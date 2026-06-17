@@ -1,0 +1,42 @@
+{
+	"id": "logo_cloud",
+	"type": "SharedSlice",
+	"name": "LogoCloud",
+	"description": "A heading with a grid of partner or client logos.",
+	"variations": [
+		{
+			"id": "default",
+			"name": "Default",
+			"docURL": "...",
+			"version": "sktwi1xtmkfgx8626",
+			"description": "Default",
+			"primary": {
+				"heading": {
+					"type": "Text",
+					"config": {
+						"label": "Heading",
+						"placeholder": "Trusted by industry leaders"
+					}
+				}
+			},
+			"items": {
+				"logo": {
+					"type": "Image",
+					"config": {
+						"label": "Logo",
+						"constraint": {},
+						"thumbnails": []
+					}
+				},
+				"company_name": {
+					"type": "Text",
+					"config": {
+						"label": "Company name",
+						"placeholder": "Used as alt text for the logo"
+					}
+				}
+			},
+			"imageUrl": "https://images.prismic.io/slice-machine/621a5ec4-0387-4bc5-9860-2dd46cbc07cd_default_ss.png?auto=compress,format"
+		}
+	]
+}

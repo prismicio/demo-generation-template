@@ -1,0 +1,132 @@
+{
+	"status": "ok",
+	"brand": {
+		"domain": "spotify.com",
+		"title": "Spotify",
+		"description": "Spotify is a leading digital music streaming service that offers users an extensive library of millions of songs, podcasts, and audiobooks, catering to a wide range of tastes and preferences. With an intuitive interface and personalized playlists, Spotify allows users to discover and enjoy music and audio content for every moment in their lives, whether for relaxation, motivation, or entertainment. The platform is accessible on various devices, making it easy for users to listen whenever and wherever they choose. Spotify continues to innovate with features that enhance the listening experience, connecting artists and audiences in a unique way.",
+		"slogan": "Music, podcasts, and audiobooks for every moment.",
+		"colors": [
+			{
+				"hex": "#1cd462",
+				"name": "Limonana"
+			},
+			{
+				"hex": "#207f3f",
+				"name": "Warpstone Glow"
+			}
+		],
+		"logos": [
+			{
+				"url": "https://media.brand.dev/739f20f4-aed1-44d1-a4a5-c015265c10db.png",
+				"mode": "dark",
+				"colors": [
+					{
+						"hex": "#1cd462",
+						"name": "Limonana"
+					}
+				],
+				"resolution": {
+					"width": 250,
+					"height": 250,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/b3a3572c-6834-4800-b17c-6a3ee0c063d8.png",
+				"mode": "light",
+				"colors": [
+					{
+						"hex": "#2bd164",
+						"name": "Brazilianite"
+					},
+					{
+						"hex": "#207f3f",
+						"name": "Warpstone Glow"
+					}
+				],
+				"resolution": {
+					"width": 144,
+					"height": 144,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			},
+			{
+				"url": "https://media.brand.dev/7b610be0-b732-4412-95c6-40d1b7de98a2.png",
+				"mode": "dark",
+				"colors": [
+					{
+						"hex": "#1cd662",
+						"name": "Limonana"
+					}
+				],
+				"resolution": {
+					"width": 128,
+					"height": 128,
+					"aspect_ratio": 1
+				},
+				"type": "icon"
+			}
+		],
+		"backdrops": [
+			{
+				"url": "https://media.brand.dev/2b1127c5-f58a-415a-bd5a-b23d472ee942.jpg",
+				"colors": [
+					{
+						"hex": "#2258c1",
+						"name": "New Car"
+					},
+					{
+						"hex": "#090d13",
+						"name": "Dark Rift"
+					},
+					{
+						"hex": "#ad615c",
+						"name": "Poppy Prose"
+					}
+				],
+				"resolution": {
+					"width": 1500,
+					"height": 500,
+					"aspect_ratio": 3
+				}
+			}
+		],
+		"address": {
+			"city": "Luxembourg City",
+			"country": "LUXEMBOURG",
+			"country_code": "LU",
+			"postal_code": "1610"
+		},
+		"socials": [
+			{
+				"type": "x",
+				"url": "https://x.com/spotify"
+			}
+		],
+		"stock": {
+			"ticker": "SPOT",
+			"exchange": "NYSE"
+		},
+		"is_nsfw": false,
+		"industries": {
+			"eic": [
+				{
+					"industry": "Entertainment",
+					"subindustry": "Streaming Platforms (Video, Music, Audio)"
+				}
+			]
+		},
+		"links": {
+			"blog": null,
+			"careers": null,
+			"privacy": null,
+			"terms": null,
+			"contact": null,
+			"pricing": null
+		},
+		"primary_language": "english"
+	},
+	"code": 200
+}

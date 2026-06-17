@@ -1,0 +1,34 @@
+{
+	"id": "footer",
+	"label": "Footer",
+	"repeatable": false,
+	"json": {
+		"Main": {
+			"logo": {
+				"type": "Image",
+				"config": {
+					"label": "Logo",
+					"constraint": {},
+					"thumbnails": []
+				}
+			},
+			"brand_name": {
+				"type": "Text",
+				"config": {
+					"label": "Brand Name"
+				}
+			},
+			"navigation": {
+				"type": "Link",
+				"config": {
+					"label": "Navigation",
+					"select": null,
+					"allowText": true,
+					"repeat": true
+				}
+			}
+		}
+	},
+	"status": true,
+	"format": "custom"
+}
