@@ -4,7 +4,8 @@ import { execFileSync } from "node:child_process"
 import fs from "node:fs"
 import path from "node:path"
 
-import { brandToIndexCss } from "../../src/utils/brandToIndexCss.ts"
+import { readThemeFromBrandFileData } from "../src/lib/brandInput.js"
+import { renderGlobalsCss } from "../src/lib/renderGlobalsCss.js"
 import { buildAppUrl, resolvePort } from "./nextDevUtils.js"
 
 const root = path.resolve(import.meta.dirname, "..")
@@ -24,7 +25,8 @@ if (!fs.existsSync(brandFile)) {
 
 console.log(`[dev] Applying brand: ${brandName}`)
 const brandData = JSON.parse(fs.readFileSync(brandFile, "utf-8"))
-const css = brandToIndexCss(brandData)
+const theme = readThemeFromBrandFileData(brandData)
+const css = renderGlobalsCss(theme)
 const outputPath = path.join(root, "src", "app", "globals.css")
 fs.mkdirSync(path.dirname(outputPath), { recursive: true })
 fs.writeFileSync(outputPath, css, "utf-8")

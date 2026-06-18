@@ -40,7 +40,7 @@ async function main() {
 	const { applyBrand } = await import("./applyBrand.js")
 
 	writePrismicConfig({ repositoryName, documentAPIEndpoint })
-	writeBrandInput({ brandName, brandBase64: values["brand-base64"] })
+	await writeBrandInput({ brandName, brandBase64: values["brand-base64"] })
 	applyBrand({ root, brandName })
 	writePreparedMarker({ repositoryName, documentAPIEndpoint })
 
@@ -95,15 +95,18 @@ function writePrismicConfig(args) {
 	)
 }
 
-function writeBrandInput(args) {
+async function writeBrandInput(args) {
 	const { brandName, brandBase64 } = args
 	if (!brandBase64) {
 		return
 	}
 
+	const { parseBrandInput } = await import("../src/lib/brandInput.js")
 	const brandsDir = path.join(root, "src", "mocks", "brands")
 	const brandJson = Buffer.from(brandBase64, "base64").toString("utf-8")
-	JSON.parse(brandJson)
+	const brandInput = JSON.parse(brandJson)
+	parseBrandInput(brandInput)
+
 	fs.writeFileSync(
 		path.join(brandsDir, `${brandName}.json`),
 		brandJson,
@@ -133,7 +136,7 @@ function printUsage(exitCode) {
 
 Options:
   -r, --repository <name>              Generated Prismic repository name.
-      --brand-base64 <base64>          Base64 encoded brand JSON.
+      --brand-base64 <base64>          Base64 encoded JSON: { "theme": { ... } }.
   -h, --help                           Show this help.
 `)
 	process.exit(exitCode)

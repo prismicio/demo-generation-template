@@ -191,5 +191,14 @@
 		},
 		"primary_language": "english"
 	},
-	"code": 200
+	"code": 200,
+	"theme": {
+		"primary": "#e40404",
+		"primaryHover": "#c90000",
+		"primaryForeground": "#ffffff",
+		"accent": "#86040c",
+		"accentSoft": "rgb(134 4 12 / 0.15)",
+		"secondary": "#c79686",
+		"logoChip": "transparent"
+	}
 }
