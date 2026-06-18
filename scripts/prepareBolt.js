@@ -46,7 +46,7 @@ async function main() {
 
 	console.log(`[prepare:bolt] Configured Prismic repository: ${repositoryName}`)
 	console.log(`[prepare:bolt] Document API endpoint: ${documentAPIEndpoint}`)
-	console.log("[prepare:bolt] Run npm run preview to build and serve the website.")
+	console.log("[prepare:bolt] Run npm run dev to start the website.")
 }
 
 function ensureDependenciesInstalled() {
