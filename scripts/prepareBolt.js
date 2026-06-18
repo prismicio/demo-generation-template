@@ -1,44 +1,83 @@
 #!/usr/bin/env node
 
+import { execFileSync } from "node:child_process"
 import fs from "node:fs"
 import path from "node:path"
 import process from "node:process"
 import { parseArgs } from "node:util"
 
-import { applyBrand } from "./applyBrand.js"
-
 const root = path.resolve(import.meta.dirname, "..")
 
-const { values } = parseArgs({
-	args: process.argv.slice(2),
-	options: {
-		repository: { type: "string", short: "r" },
-		"brand-base64": { type: "string" },
-		help: { type: "boolean", short: "h" },
-	},
+main().catch((error) => {
+	console.error(error)
+	process.exit(1)
 })
 
-if (values.help) {
-	printUsage(0)
+async function main() {
+	const { values } = parseArgs({
+		args: process.argv.slice(2),
+		options: {
+			repository: { type: "string", short: "r" },
+			"brand-base64": { type: "string" },
+			help: { type: "boolean", short: "h" },
+		},
+	})
+
+	if (values.help) {
+		printUsage(0)
+	}
+
+	const repositoryName = values.repository
+	if (!repositoryName) {
+		console.error("Missing required --repository value.")
+		printUsage(1)
+	}
+
+	const documentAPIEndpoint = `https://${repositoryName}.cdn.prismic.io/api/v2`
+	const brandName = values["brand-base64"] ? "bolt" : "prismic"
+
+	ensureDependenciesInstalled()
+	const { applyBrand } = await import("./applyBrand.js")
+
+	writePrismicConfig({ repositoryName, documentAPIEndpoint })
+	writeBrandInput({ brandName, brandBase64: values["brand-base64"] })
+	applyBrand({ root, brandName })
+	writePreparedMarker({ repositoryName, documentAPIEndpoint })
+
+	console.log(`[prepare:bolt] Configured Prismic repository: ${repositoryName}`)
+	console.log(`[prepare:bolt] Document API endpoint: ${documentAPIEndpoint}`)
+	console.log("[prepare:bolt] Run npm run preview to build and serve the website.")
 }
 
-const repositoryName = values.repository
-if (!repositoryName) {
-	console.error("Missing required --repository value.")
-	printUsage(1)
+function ensureDependenciesInstalled() {
+	const nodeModulesPath = path.join(root, "node_modules")
+	if (hasInstalledNodeModules(nodeModulesPath)) {
+		return
+	}
+
+	console.log("[prepare:bolt] node_modules not found. Running npm install...")
+	execFileSync("npm", ["install", "--workspaces=false"], {
+		cwd: root,
+		stdio: "inherit",
+	})
 }
 
-const documentAPIEndpoint = `https://${repositoryName}.cdn.prismic.io/api/v2`
-const brandName = values["brand-base64"] ? "bolt" : "prismic"
+function hasInstalledNodeModules(nodeModulesPath) {
+	try {
+		const stats = fs.statSync(nodeModulesPath)
+		if (!stats.isDirectory()) {
+			return false
+		}
 
-writePrismicConfig({ repositoryName, documentAPIEndpoint })
-writeBrandInput({ brandName, brandBase64: values["brand-base64"] })
-applyBrand({ root, brandName })
-writePreparedMarker({ repositoryName, documentAPIEndpoint })
+		return fs.readdirSync(nodeModulesPath).length > 0
+	} catch (error) {
+		if (error instanceof Error && "code" in error && error.code === "ENOENT") {
+			return false
+		}
 
-console.log(`[prepare:bolt] Configured Prismic repository: ${repositoryName}`)
-console.log(`[prepare:bolt] Document API endpoint: ${documentAPIEndpoint}`)
-console.log("[prepare:bolt] Run npm run preview to build and serve the website.")
+		throw error
+	}
+}
 
 function writePrismicConfig(args) {
 	const { repositoryName, documentAPIEndpoint } = args
