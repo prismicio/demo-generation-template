@@ -33,7 +33,7 @@ console.log(`[dev] Wrote ${outputPath}`)
 const port = resolvePort()
 const homePath = buildAppUrl({ repositoryName, pathname: "/home" })
 console.log(
-	`[dev] Full page preview: http://localhost:${port}${homePath} (or yarn preview:page)`,
+	`[dev] Full page preview: http://localhost:${port}${homePath} (or npm run preview:page)`,
 )
 
 console.log(`[dev] Starting Next.js dev server...`)

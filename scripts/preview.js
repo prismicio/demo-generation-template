@@ -19,19 +19,19 @@ const brandName = parseBrandArg(process.argv)
 const boltPrepared = fs.existsSync(path.join(root, ".prismic-bolt.json"))
 
 if (boltPrepared) {
-	console.log("[preview] Using globals.css prepared by yarn prepare:bolt.")
+	console.log("[preview] Using globals.css prepared by npm run prepare:bolt.")
 } else {
 	applyBrand({ root, brandName })
 }
 
 if (!skipBuild) {
 	console.log("[preview] Building static export...")
-	execFileSync("yarn", ["build"], { cwd: root, stdio: "inherit" })
+	execFileSync("npm", ["run", "build"], { cwd: root, stdio: "inherit" })
 }
 
 if (!fs.existsSync(outDir)) {
 	console.error(
-		`[preview] Build output not found at ${outDir}. Run yarn build first.`,
+		`[preview] Build output not found at ${outDir}. Run npm run build first.`,
 	)
 	process.exit(1)
 }

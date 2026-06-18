@@ -4,7 +4,11 @@ import fs from "node:fs"
 import path from "node:path"
 
 import { applyBrand, parseBrandArg } from "./applyBrand.js"
-import { buildAppUrl, resolvePort, startNextDevAndOpen } from "./nextDevUtils.js"
+import {
+	buildAppUrl,
+	resolvePort,
+	startNextDevAndOpen,
+} from "./nextDevUtils.js"
 
 const root = path.resolve(import.meta.dirname, "..")
 const { repositoryName } = JSON.parse(
@@ -12,7 +16,9 @@ const { repositoryName } = JSON.parse(
 )
 
 const pageUid =
-	process.argv[2] && !process.argv[2].startsWith("--") ? process.argv[2] : "home"
+	process.argv[2] && !process.argv[2].startsWith("--") ?
+		process.argv[2]
+	:	"home"
 
 const brandName = parseBrandArg(process.argv)
 applyBrand({ root, brandName })

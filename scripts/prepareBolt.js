@@ -38,7 +38,7 @@ writePreparedMarker({ repositoryName, documentAPIEndpoint })
 
 console.log(`[prepare:bolt] Configured Prismic repository: ${repositoryName}`)
 console.log(`[prepare:bolt] Document API endpoint: ${documentAPIEndpoint}`)
-console.log("[prepare:bolt] Run yarn preview to build and serve the website.")
+console.log("[prepare:bolt] Run npm run preview to build and serve the website.")
 
 function writePrismicConfig(args) {
 	const { repositoryName, documentAPIEndpoint } = args
@@ -90,7 +90,7 @@ function writePreparedMarker(args) {
 
 function printUsage(exitCode) {
 	console.error(`Usage:
-  yarn prepare:bolt --repository <repository> [options]
+  npm run prepare:bolt -- --repository <repository> [options]
 
 Options:
   -r, --repository <name>              Generated Prismic repository name.

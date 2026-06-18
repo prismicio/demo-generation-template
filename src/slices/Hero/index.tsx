@@ -1,7 +1,7 @@
 import { type Content, isFilled } from "@prismicio/client"
 import { PrismicImage, type SliceComponentProps } from "@prismicio/react"
 import clsx from "clsx"
-import type { FC, ReactNode } from "react"
+import type { FC } from "react"
 
 import { Bounded } from "../../components/Bounded"
 

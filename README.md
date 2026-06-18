@@ -10,18 +10,18 @@ During `sst deploy` (or `sst dev`), the `SnapshotDeployment` SST resource:
 
 1. Collects all tracked files in this directory (via `git ls-files`).
 2. Uploads them to a Vercel Sandbox.
-3. Runs `yarn install --immutable` inside the sandbox.
-4. If the lockfile is out of sync, falls back to `yarn install` and writes the updated `yarn.lock` back to this directory.
+3. Runs `npm ci` inside the sandbox.
+4. If the lockfile is out of sync, falls back to `npm install` and writes the updated `package-lock.json` back to this directory.
 5. Takes a snapshot of the sandbox — this snapshot is what gets used in production.
 
 The production build runs `next build` with `output: "export"`, producing static files in `out/`.
 
-### `yarn.lock` Must Be Committed
+### `package-lock.json` Must Be Committed
 
-The `yarn.lock` in this directory is generated/validated during the SST snapshot build. CI checks that the lockfile was not modified during deploy:
+The `package-lock.json` in this directory is generated/validated during the SST snapshot build. CI checks that the lockfile was not modified during deploy:
 
-- If `yarn.lock` is out of sync with `package.json`, the CI step **"Check template lockfile is committed"** will fail.
-- To fix this: run `sst deploy` (or `sst dev`) locally, which will regenerate the lockfile, then commit the updated `yarn.lock`.
+- If `package-lock.json` is out of sync with `package.json`, the CI step **"Check template lockfile is committed"** will fail.
+- To fix this: run `sst deploy` (or `sst dev`) locally, which will regenerate the lockfile, then commit the updated `package-lock.json`.
 
 ## Running the Dev Server
 
@@ -30,7 +30,7 @@ The dev server uses [MSW](https://mswjs.io/) to mock the Prismic API, allowing y
 Start the dev server with a specific brand:
 
 ```bash
-yarn dev --brand=netflix
+npm run dev -- --brand=netflix
 ```
 
 Available brands (see `src/mocks/brands/`):
@@ -51,24 +51,12 @@ Preview scripts open the browser themselves (Next.js has no `--open` CLI flag). 
 
 | Command | What it does |
 |---|---|
-| `yarn preview:page` | Dev server + MSW mocks; opens `/{repositoryName}/home/` with header, footer, and slices in generator order |
-| `yarn preview:page <uid>` | Same as above for another landing page uid |
-| `yarn preview:slice hero` | Dev server; opens `/{repositoryName}/slice-preview/hero/` (single slice, no MSW) |
-| `yarn dev --brand=prismic` | Dev server; navigate manually to `http://localhost:3000/mock/home/` |
-| `yarn preview` | Builds and serves the static `out/` export (content loads from live Prismic API at runtime) |
-| `yarn preview --skip-build` | Serve existing `out/` without rebuilding |
-
-Bolt handoff can prepare the template after GitHub import:
-
-```sh
-yarn prepare:bolt --repository <repository> \
-  --brand-base64 <base64-brand-json>
-```
-
-This writes `prismic.config.json`, decodes the brand JSON into the local brand
-mock folder, runs `applyBrand.js`, and creates `.prismic-bolt.json`. When that
-marker exists, `yarn preview` keeps the prepared `globals.css` instead of
-applying a local mock brand.
+| `npm run preview:page` | Dev server + MSW mocks; opens `/{repositoryName}/home/` with header, footer, and slices in generator order |
+| `npm run preview:page -- <uid>` | Same as above for another landing page uid |
+| `npm run preview:slice -- hero` | Dev server; opens `/{repositoryName}/slice-preview/hero/` (single slice, no MSW) |
+| `npm run dev -- --brand=prismic` | Dev server; navigate manually to `http://localhost:3000/mock/home/` |
+| `npm run preview` | Builds and serves the static `out/` export (content loads from live Prismic API at runtime) |
+| `npm run preview -- --skip-build` | Serve existing `out/` without rebuilding |
 
 Port configuration: `PORT` (Next.js native) or `NEXT_PREVIEW_PORT` (project alias), default `3000`.
 
@@ -77,7 +65,7 @@ Other routes:
 - **Slice simulator** (configured in Prismic repo settings): `/{repositoryName}/slice-simulator/`
 - **Prismic preview entry**: `/{repositoryName}/api/preview/?token=...`
 
-Note: `next start` is not available with `output: "export"`. Use `yarn preview` for a production-like local preview.
+Note: `next start` is not available with `output: "export"`. Use `npm run preview` for a production-like local preview.
 
 ## Adding a New Slice
 
