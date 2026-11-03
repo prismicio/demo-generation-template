@@ -23,7 +23,7 @@
 		"next": "16.1.6",
 		"react": "19.0.0",
 		"react-dom": "19.0.0",
-		"zod": "4.3.6"
+		"zod": "4.6.6"
 	},
 	"devDependencies": {
 		"@prismicio/cli": "0.0.3-beta.18",
